@@ -1,6 +1,6 @@
 ---
-title: 'Processing (22/23 Blok 1)'
-media_order: 'image-20220912172731414.png,image-20220912170148484.png,ansichtkaart_ameland_compressed.gif,header.png'
+title: Processing
+media_order: 'image-20220912172731414.png,image-20220912170148484.png,demo.gif,header.png'
 ---
 
 # Creatief Programmeren met Processing
@@ -8,6 +8,8 @@ media_order: 'image-20220912172731414.png,image-20220912170148484.png,ansichtkaa
 ![Creatief programmeren met Processing](header.png)
 
 [TOC]
+
+*Dit is de syllabus voor de module in blok 2. Op zoek naar de syllabus uit blok 1? [Klik hier.](/modules/processing-2223-1)*
 
 Welkom bij de module Creatief Programmeren met Processing! In deze module ga je aan de slag met de programmeertaal [Processing](https://processing.org/), waarmee je creatieve visuele programma’s en animaties kunt maken. Je leert ook hoe je een programma uit kleinere blokjes kunt opbouwen met objectgeoriënteerd programmeren. Daardoor kun je ook een groot en ingewikkeld programma overzichtelijk houden, waardoor het voor anderen (en voor jezelf volgende week) makkelijker te begrijpen is hoe het programma werkt.
 
@@ -39,14 +41,17 @@ Naast de code lever je ook een filmpje in waarin je een demonstratie geeft van j
   - Hoe wordt interactie gecommuniceerd met een class die daarop moet reageren?
   - Welke code ben je trots op?
   - Welke code zou je nog willen verbeteren als je daar tijd voor had?
+- Als je een feedbackmoment tijdens de les gemist hebt:
+  - Welke feedback heb je gekregen van klasgenoten nadat je daarom gevraagd had?
+  - Hoe heb je die feedback gebruikt om je project te verbeteren?
 
 Je hoeft geen gelikte presentatie voor te bereiden: neem even de tijd om over deze vragen na te denken, start een schermopname en vertel over je programma. Je filmpje hoeft niet langer te zijn dan 10 minuten, en je hoeft zeker niet meer dan 30 minuten aan het hele proces te besteden. Je webcam hoeft er niet bij aan als je dat niet wilt (dus je kan het gewoon in je pyjama doen). Voor het maken van een schermopname met geluid kun je bijvoorbeeld [deze website](https://online.hitpaw.com/online-screen-recorder.html) gebruiken.
 
-Om je een beetje op weg te helpen, kiezen we elk blok een thema voor het project: deze keer (blok 1 van schooljaar 2022/2023) is het thema **ansichtkaarten**. Dat klinkt misschien een beetje ouderwets, maar met Processing trekken we deze traditie mee de 21ste eeuw in: we maken een geanimeerde en interactieve ansichtkaart. Zie bijvoorbeeld de vuurtoren van Ameland hieronder. Op deze ansichtkaart is de hoogte van de zon en het licht van de vuurtoren bijvoorbeeld afhankelijk van de hoogte van de muis op het scherm:
+Om je een beetje op weg te helpen, kiezen we elk blok een thema voor het project: deze keer (blok 2 van schooljaar 2022/2023) is het thema **boeken**. Kies een boek dat je de afgelopen tijd hebt gelezen (voor school of voor je eigen plezier (of allebei)) en maak een creatieve, interactieve versie van de omslag. Zie hier een voorbeeld op basis van *Under the Whispering Door* van TJ Klune, met de originele omslag links en een interactieve adaptatie in Processing aan de rechterkant:
 
-![Voorbeeld van een ansichtkaart met een vuurtoren en de tekst "Groetjes vanaf Ameland"](ansichtkaart_ameland_compressed.gif)
+![Voorbeeld van een interactieve boekomslag waar huizen uit de lucht vallen en op elkaar gestapeld worden.](demo.gif)
 
-Misschien heb je deze zomer nog een ansichtkaart verstuurd vanaf je vakantieadres, of meegenomen als souvenir. Dan is het natuurlijk leuk om die als startpunt te gebruiken! Dat betekent niet dat je die kaart precies na moet maken, maar door de belangrijkste elementen op dezelfde plek te zetten kun je al snel iets maken wat er wel op lijkt. Je mag natuurlijk ook zelf een ansichtkaart bedenken voor een plek waar je op vakantie was, of elementen van verschillende kaarten die je in de souvenirwinkel hebt gezien combineren.
+Mocht je de laatste tijd alleen serieuze literatuur met oersaaie omslagen gelezen hebben, neem dan je favoriete kinderboek als inspiratie. Daar gebeurt vast genoeg op de omslag om iets van te kunnen maken!
 
 ## Beoordeling
 
@@ -376,7 +381,6 @@ Deze week hebben we een fysieke les, waarin we eerst wat tijd besteden aan kenni
 
 - Kennismaken met elkaar
 - Introductie objectgeoriënteerd programmeren: de dierentuin
-  - [De code uit de les](https://github.com/arthurrump/QH-Processing/tree/main/Dierentuin)
 - Aan de slag met je project
 
 ## Online materiaal
@@ -411,17 +415,17 @@ Deze week hebben we een fysieke les, waarin we eerst wat tijd besteden aan kenni
 
 ## Project
 
-1. Maak een schets van jouw ansichtkaart. Wat zijn de belangrijke elementen op jouw kaart? 
+1. Maak een schets van jouw project. Wat zijn de belangrijke elementen? 
 
    (Deze schets is niet heilig en je mag in de komende weken alles veranderen, maar het is nuttig om een idee te hebben waar je ongeveer heen wilt.)
 
-2. Welke objecten staan er op jouw kaart? Welke classes moet je dan in je project definiëren? Heb je meerdere objecten van dezelfde class? 
+2. Welke objecten zijn er in jouw ontwerp? Welke classes moet je dan in je project definiëren? Heb je meerdere objecten van dezelfde class? 
 
    (Ook hier: je mag in de komende weken nog veel meer classes toevoegen als dat handiger blijkt, het gaat erom dat je op een objectgeoriënteerde manier naar je ontwerp kijkt.)
 
 3. Start je project in Processing: maak de classes die je bedacht hebt, geef ze een simpele display functie (al is het maar alleen een rechthoek van ongeveer de juiste afmeting) en probeer dingen ongeveer op de juiste plek te zetten.
 
-4. Begin met het mooier tekenen van de objecten in je ansichtkaart. Gebruik alle vormen en kleuren die je in de vorige weken geleerd hebt.
+4. Begin met het mooier tekenen van de objecten in je project. Gebruik alle vormen en kleuren die je in de vorige weken geleerd hebt.
 
 ## Oefeningen
 
@@ -441,7 +445,9 @@ Deze week gaan we onze objecten tot leven brengen en interactie toevoegen. Voor 
 
 ## Tijdens de les
 
-Het eerste stukje is een beetje herhaling van het online materiaal van vorige week, daarna kijken we verder naar de structuur van interacties.
+We beginnen de les met een feedbackronde over je eigen project. Laat de inspiratie voor jouw project zien, vertel welke objecten er te zien zijn en welke classes je gaat definiëren of al hebt gedefiniëerd. Je medeleerlingen geven feedback op jouw keuzes. Als je niet bij de les aanwezig bent, zorg dan dat je deze feedback zelf organiseert door een of twee klasgenoten te vragen en vertel in je videopresentatie wat die feedback was en hoe je het verwerkt hebt.
+
+De uitleg bestaat eerst uit een beetje herhaling van het online materiaal van vorige week, daarna kijken we verder naar de structuur van interacties.
 
 - Basisprincipes van OO
 - Beweging met een `update` methode
@@ -473,7 +479,7 @@ Het eerste stukje is een beetje herhaling van het online materiaal van vorige we
 
 ## Project
 
-1. Welke beweging zou je in je ansichtkaart kunnen toevoegen? En welke interacties zou je toe willen voegen? Maak een lijstje van al je ideeën, en schroom niet om daar later nog iets aan toe te voegen. P
+1. Welke beweging zou je in je project kunnen toevoegen? En welke interacties zou je toe willen voegen? Maak een lijstje van al je ideeën, en schroom niet om daar later nog iets aan toe te voegen.
 
    Probeer je niet te beperken tot wat jij denkt dat mogelijk is: sommige dingen zijn eenvoudiger te maken dan je zou denken en andere veel ingewikkelder. Daar kom je pas achter als je het probeert! En als je er niet uit komt, dan kun je altijd hulp vragen bij mij of een klasgenoot. Misschien hebben zij een idee hoe je iets simpel kan oplossen.
 
@@ -706,6 +712,10 @@ We hebben nu een solide objectgeoriënteerde structuur staan. Gefeliciteerd, dat
 In tegenstelling tot de vorige weken is het deze week niet het doel dat je alles weet van die drie onderwerpen, dit zijn suggesties die je kunt gebruiken om je project te verbeteren, maar je mag ze ook links laten liggen als het aan jouw project niets toevoegt. Aan het eind van deze week heb je meer gereedschappen in je gereedschapskist om jouw project net dat beetje mooier te maken.
 
 ## Tijdens de les
+
+We beginnen de les weer met een feedbackmoment over de structuur van jouw project. Zorg dus dat je daar wat van kunt laten zien en er iets zinnigs over kunt vertellen! Als je dit feedbackmoment mist, vraag dan zelf een of twee klasgenoten om feedback en vertel in je videopresentatie wat je daarmee gedaan hebt.
+
+Daarna geef ik nog een beetje uitleg over een aantal onderwerpen:
 
 - Wat kun je met randomness, particles en tekst?
 - Jouw eigen ideeën
