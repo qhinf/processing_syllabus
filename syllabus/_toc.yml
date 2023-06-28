@@ -1,0 +1,21 @@
+# Inhoudsopgave
+# Alle pagina's van de syllabus moeten hier in staan!
+# https://jupyterbook.org/structure/toc.html
+
+format: jb-book
+root: index
+parts:
+  - caption: Over de module
+    chapters:
+    - file: over_de_syllabus
+    - file: eindopdracht
+  - caption: Lessen
+    numbered: true
+    chapters:
+    - file: 1_beginnen
+    - file: 2_oefenen
+    - file: 3_oop
+    - file: 4_geanimeerde_interactieve_objecten
+    - file: 5_structuur
+    - file: 6_meer_tekenen
+    - file: 7_afronding
