@@ -62,7 +62,7 @@ Het is handig om van te voren op papier te schetsen wat je van plan bent, zodat 
 
 Als je met z'n tweeën werkt, maak dan gebruik van peer programming: een van jullie is de *driver* die de code typt, en de ander is de *navigator* die bedenkt wat er moet gebeuren. Zo kan de driver zich vooral focussen op de details en de syntax en kan de navigator nadenken over de juiste aanpak zonder na te hoeven denken over een `;`. Wissel af en toe om, zodat je wel beide vaardigheden oefent! Als je via Teams samenwerkt, kun je de ander de besturing geven bij het schermdelen, zodat diegene ook in de Processing editor kan typen.
 
-Stuur je programma uiterlijk voor de les in week 3 naar a.rump apenstaartje quadraam punt nl. Als je je creatie samen gemaakt hebt, zet dan jullie beide namen erbij.
+Stuur je programma uiterlijk voor de les in week 3 naar {{ docent_email }}. Als je je creatie samen gemaakt hebt, zet dan jullie beide namen erbij.
 
 ## Oefeningen
 
