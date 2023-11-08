@@ -1,5 +1,8 @@
 # Creatief Programmeren met Processing
 
+<!-- Deze regel niet wijzigen! -->
+*Versie {{ versie }}. Jouw docent: {{ docent }} ({{ docent_email }})*
+
 ![Creatief programmeren met Processing](assets/header.png)
 
 Welkom bij de module Creatief Programmeren met Processing! In deze module ga je aan de slag met de programmeertaal **[Processing](https://processing.org/)**, waarmee je **creatieve visuele programma’s en animaties** kunt maken. Je leert ook hoe je een programma uit kleinere blokjes kunt opbouwen met **objectgeoriënteerd programmeren**. Daardoor kun je ook een groot en ingewikkeld programma overzichtelijk houden, waardoor het voor anderen (en voor jezelf volgende week) makkelijker te begrijpen is hoe het programma werkt.
