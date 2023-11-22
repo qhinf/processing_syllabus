@@ -1,6 +1,12 @@
 # Oefenen met Processing
 
-In deze week hebben we geen les, maar ga je zelf of samen oefenen met Processing en een opdracht maken die we volgende week in de les gaan gebruiken. Voor deze week staat nog wat materiaal op het programma over variabelen, if-statements en loops. Die komen je hopelijk nog bekend voor, dus dit materiaal is vooral bedoeld als herhaling en om te zien hoe dat in Processing werkt. Aan het eind van deze week kun je geanimeerde en interactieve tekeningen maken in Processing en ben je klaar om meer structuur in je programma's aan te brengen.
+Deze week gaan we met elkaar kennis maken en verder oefenen met Processing. Ook is er een [opdracht](#opdracht) waarvan we het resultaat volgende week in de les gaan gebruiken (dus maak die vooral!). Voor deze week staat nog wat materiaal op het programma over variabelen, if-statements en loops. Die komen je hopelijk nog bekend voor, dus dit materiaal is vooral bedoeld als herhaling en om te zien hoe dat in Processing werkt. Aan het eind van deze week kun je geanimeerde en interactieve tekeningen maken in Processing en ben je klaar om meer structuur in je programma's aan te brengen.
+
+## Tijdens de les
+
+- Kennismaking
+- Opfrisquiz
+- [Opdracht](#opdracht) en [oefeningen](#oefeningen)
 
 ## Online materiaal
 
@@ -62,7 +68,7 @@ Het is handig om van te voren op papier te schetsen wat je van plan bent, zodat 
 
 Als je met z'n tweeën werkt, maak dan gebruik van peer programming: een van jullie is de *driver* die de code typt, en de ander is de *navigator* die bedenkt wat er moet gebeuren. Zo kan de driver zich vooral focussen op de details en de syntax en kan de navigator nadenken over de juiste aanpak zonder na te hoeven denken over een `;`. Wissel af en toe om, zodat je wel beide vaardigheden oefent! Als je via Teams samenwerkt, kun je de ander de besturing geven bij het schermdelen, zodat diegene ook in de Processing editor kan typen.
 
-Stuur je programma uiterlijk voor de les in week 3 naar {{ docent_email }}. Als je je creatie samen gemaakt hebt, zet dan jullie beide namen erbij.
+Stuur je programma uiterlijk voor de les in week 3 naar je docent: {{ docent_email }}. Als je je creatie samen gemaakt hebt, zet dan jullie beide namen erbij.
 
 ## Oefeningen
 
