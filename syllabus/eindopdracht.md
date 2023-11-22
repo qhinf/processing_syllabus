@@ -1,6 +1,6 @@
 # Eindopdracht
 
-Om te laten zien dat je deze leerdoelen gehaald hebt, lever je aan het eind van de module een eindopdracht in: dit is een creatief en interactief programma dat je in Processing gemaakt hebt en waarin je natuurlijk de basisprincipes van objectgeoriënteerd programmeren hebt toegepast. Je maakt dit programma alleen, maar je mag wel overleggen met je klasgenoten (en anderen, als je dat wilt): het doel is dat je iets leert, en je kunt ook van elkaar leren. We vragen je dan wel om met commentaar in de code aan te geven dat je bepaalde stukken samen met iemand anders gemaakt hebt. Je mag ook gebruik maken van stukjes code die je op internet vindt, op voorwaarde dat je je aan de [Regels over code kopiëren](/informatie/code-stelen-van-het-internet-of-leerling) houdt. 
+Om te laten zien dat je deze leerdoelen gehaald hebt, lever je aan het eind van de module een eindopdracht in: dit is een creatief en interactief programma dat je in Processing gemaakt hebt en waarin je natuurlijk de basisprincipes van objectgeoriënteerd programmeren hebt toegepast. Je maakt dit programma alleen, maar je mag wel overleggen met je klasgenoten (en anderen, als je dat wilt): het doel is dat je iets leert, en je kunt ook van elkaar leren. We vragen je dan wel om met commentaar in de code aan te geven dat je bepaalde stukken samen met iemand anders gemaakt hebt. Je mag ook gebruik maken van stukjes code die je op internet vindt, op voorwaarde dat je je aan de [Regels over code kopiëren](https://informatica.q-highschool.nl/informatie/code-stelen-van-het-internet-of-leerling) houdt. 
 
 Naast de code lever je ook een filmpje in waarin je een demonstratie geeft van jouw programma en de volgende vragen beantwoord:
 
@@ -21,7 +21,7 @@ Je hoeft geen gelikte presentatie voor te bereiden: neem even de tijd om over de
 
 Om je een beetje op weg te helpen, kiezen we elk blok een thema voor de opdracht: deze keer is het thema **{{ thema }}**. {{ thema_beschrijving }}
 
-Je programma en het filmpje lever je in op [app.q-highschool.nl](https://app.q-highschool.nl). Je kunt meerdere bestanden tegelijk inleveren door een .zip bestand van te maken. Kijk bij [Meerdere bestanden inleveren](/informatie/meerdere-bestanden-inleveren) als je daar hulp bij nodig hebt. De deadline hiervoor is {{ deadline }}. Als het je niet lukt om de opdracht voor de deadline af te ronden, dan kun je uitstel aanvragen. Als je van die mogelijkheid gebruik wilt maken, moet je dat voor {{ deadline_uitstel_aanvragen }} bij je docent laten weten. Als je uitstel krijgt, is de nieuwe deadline {{ deadline_uitstel }}.
+Je programma en het filmpje lever je in op [app.q-highschool.nl](https://app.q-highschool.nl). Je kunt meerdere bestanden tegelijk inleveren door een .zip bestand van te maken. Kijk bij [Meerdere bestanden inleveren](https://informatica.q-highschool.nl/informatie/meerdere-bestanden-inleveren) als je daar hulp bij nodig hebt. De deadline hiervoor is {{ deadline }}. Als het je niet lukt om de opdracht voor de deadline af te ronden, dan kun je uitstel aanvragen. Als je van die mogelijkheid gebruik wilt maken, moet je dat voor {{ deadline_uitstel_aanvragen }} bij je docent laten weten. Als je uitstel krijgt, is de nieuwe deadline {{ deadline_uitstel }}.
 
 ## Beoordeling
 
