@@ -4,7 +4,6 @@ Deze week hebben we een fysieke les, waarin we eerst wat tijd besteden aan kenni
 
 ## Tijdens de les
 
-- Kennismaken met elkaar
 - Introductie objectgeoriënteerd programmeren: de dierentuin
 - Aan de slag met je project
 
@@ -54,12 +53,98 @@ Deze week hebben we een fysieke les, waarin we eerst wat tijd besteden aan kenni
 
 ## Oefeningen
 
-```java
-// TODO
-// Deze syllabus is nog in ontwikkeling. Hier komen binnenkort nog oefeningen te 
-// staan. Tot die tijd kun je natuurlijk ook zelf wat doen: je hebt al verscheidene
-// programma's geschreven die je kunt aanpassen! Maak bijvoorbeeld een class voor 
-// je creatie van vorige week en gebruik die class om dezelfde oefeningen te doen.
-// Wordt je code daar simpeler van? Dat kun je dan ook nog met het bloemetje uit
-// week 1 proberen!
-```
+:::{exercise} Een class voor je creatie
+:label: ex-creatie-class
+
+Vorige week heb je een creatie gemaakt die zich op een locatie (x, y) bevindt. Die creatie is een ding op zich, en dus de ideale kandidaat voor een object.
+
+1. Maak een nieuwe sketch met de `setup` en `draw` functies in de hoofdtab. Geef je sketch in `setup` een logische grootte (met genoeg ruimte voor je creatie) via `size` en teken eventueel een achtergrond in `draw`. 
+
+2. Voeg een extra tab toe aan deze sketch door te klikken op het pijltje naast de naam van je sketch en dan de knop *New Tab*. Geef deze tab de naam van jouw creatie. Gebruik hierbij alleen letters (geen cijfers, spaties of speciale tekens!) en zorg daarbij dat de eerste letter een hoofdletter is. Als je meerdere woorden gebruikt, begint elk woord met een hoofdletter: bijvoorbeeld `MijnCreatie`.
+
+   ![Als je op het pijltje naast de naam van jouw sketch klikt, verschijnt er een menu met als bovenste optie "New Tab"](assets/3_oop/image-20231129105713497.png)
+
+3. In deze tab maken we een class aan die beschrijft hoe de creatie werkt. Begin met deze code voor een lege class:
+
+   ```java
+   class MijnCreatie {
+       
+   }
+   ```
+
+   Gebruik voor de class dezelfde naam als je aan de tab hebt gegeven! Zo blijft je sketch overzichtelijk en kun je snel iedere class terugvinden.
+
+4. Jouw creatie heeft (minstens) twee eigenschappen: de x-positie en de y-positie. Voeg dus binnen de class twee fields toe om die waardes op te slaan:
+
+   ```java
+   class MijnCreatie {
+     float x;
+     float y;
+   }
+   ```
+
+5. Jouw creatie heeft tot nu toe één belangrijke functionaliteit: zichzelf tekenen op het scherm. Voeg in de class een methode genaamd `display` toe waarin je de code zet die jouw creatie tekent. Gebruik hier `this.x` en `this.y` om te verwijzen naar de `x` en `y` fields in de class. Deze methode geeft geen waarde terug, dus als returntype gebruiken we `void`. De methode heeft ook geen argumenten nodig:
+
+   ```java
+     void display() {
+       // Code die de creatie tekent
+       circle(this.x, this.y, 200);
+     }
+   ```
+
+6. Tot slot hebben we in de class nog een manier nodig om creaties te maken. Daarvoor voegen we een constructor toe aan de class: dit is de code die uitgevoerd wordt op het moment dat we een object maken volgens de beschrijving van deze class. Bij het maken van de creatie, willen we de locatie aangeven waar de creatie moet komen te staan, dus krijgt de constructor twee argumenten `x` en `y`:
+
+   ```java
+     MijnCreatie(float x, float y) {
+       this.x = x;
+       this.y = y;
+     }
+   ```
+
+   In de code van de constructor zetten we die waardes dan in de `x` en `y` fields van de class, die we bij stap 4 gemaakt hebben. Omdat beide dezelfde naam hebben, moeten we `this.` gebruiken om aan te geven dat de variabelen voor de `=`-tekens de fields van de class zijn.
+
+De bouwtekening voor de creatie is nu af! Als je de sketch uitvoert, zul je echter nog geen creaties op je scherm zien: we hebben namelijk nog geen object van deze creatie gemaakt.
+
+7. Voeg terug in de hoofdtab van je programma een nieuwe variabele toe waarin je je jouw creatie kunt opslaan. Zet deze buiten de `setup` en `void` functies, zodat de variabele in beide beschikbaar is.
+
+   ```java
+   MijnCreatie mijnCreatie;
+   ```
+
+   Variabelenamen beginnen altijd met een kleine letter, maar om woorden van elkaar te onderscheiden, beginnen de volgende woorden in de naam wel met een hoofdletter. Kies uiteraard een naam die logisch is voor jouw creatie!
+
+8. Voeg een regel in `setup` toe waarmee je een nieuwe creatie maakt en opslaat in de variabele uit stap 7:
+
+   ```java
+     mijnCreatie = new MijnCreatie(200, 200);
+   ```
+
+   De twee waardes tussen haakjes zijn de `x` en de `y` argumenten voor de constructor, dus kies een logische plaats om je creatie te tekenen.
+
+9. Tot slot moeten we nog aan de creatie vragen om zichzelf te tekenen. Voeg in `draw` deze regel toe:
+
+   ```java
+     mijnCreatie.display();
+   ```
+
+Voer je sketch uit. Je hebt nu van jouw creatie een class gemaakt, die je makkelijk kan hergebruiken. Je ziet ook dat de hoofdtab veel overzichtelijker is geworden: alle details over hoe de creatie eruit ziet, staan nu bij de creatie en hier hoeven we alleen nog te weten dat die creatie getekend wordt.
+
+:::
+
+:::{exercise} Creaties clonen met classes
+
+In {ref}`ex-creaties-clonen` heb je meerdere creaties getekend door de tekencode te herhalen met een loop. Nu je jouw creatie in class hebt gezet, kun je ook meerdere creaties maken die onafhankelijk van elkaar opereren. (Nu doen de creaties natuurlijk nog niet zo veel, maar daar komt nog wel verandering in!) Voeg een extra variabele toe aan je sketch voor een tweede creatie (bijvoorbeeld `mijnCreatie2`). Maak voor deze creatie en een nieuw object in `setup` en teken de tweede creatie in `draw`.
+
+:::
+
+:::{exercise} Creatievariatie
+
+De enige eigenschappen die je creatie nu heeft zijn de `x` en `y` positie. Voeg een extra eigenschap toe (bijvoorbeeld een kleur, of ...) aan je creatie en zorg dat je die eigenschap ook kunt meegeven via de constructor. Maak nu verschillende objecten van je creaties waarin je die eigenschap varieert en teken ze allemaal in je sketch.
+
+:::
+
+:::{exercise} Alles is mooier met een bloemetje
+
+Maak in je sketch nog een nieuwe class (volgens de stappen in {ref}`ex-creatie-class`) voor het bloemetje uit de oefeningen van week 1. Voeg ook eigenschappen aan het bloemetje toe om mee te variëren, bijvoorbeeld kleuren en de grootte van de bladeren. Combineer jouw creatie met meerdere bloemetjes in één sketch.
+
+:::

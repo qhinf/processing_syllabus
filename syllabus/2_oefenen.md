@@ -98,12 +98,14 @@ Laat je creatie in plaats van opstijgen, nu stuiteren op de grond en tegen het p
 1. Welke y-coördinaat heeft de onderkant van het venster? Welke Processing variabele kun je hiervoor gebruiken? (Bekijk de [Reference](https://processing.org/reference/#environment) onder Environment als je dit op wilt zoeken.)
 2. Wat gebeurt er met de snelheid als je creatie de vloer of het plafond bereikt?
 
-Als je ook natuurkunde volgt, weet je misschien dat dingen meestal niet tegen het plafond terug stuiteren maar al eerder naar beneden vallen door iets dat "zwaartekracht" heet. Kun je je creatie ook alleen op de grond laten stuiteren door de valversnelling in je programma te gebruiken? (Je hoeft niet per se 9,81 m/s^2^ te gebruiken in je programma, kies een waarde die een mooi resultaat geeft!)
+Als je ook natuurkunde volgt, weet je misschien dat dingen meestal niet tegen het plafond terug stuiteren maar al eerder naar beneden vallen door iets dat "zwaartekracht" heet. Kun je je creatie ook alleen op de grond laten stuiteren door de valversnelling in je programma te gebruiken? (Je hoeft niet per se 9,81 m/s{sup}`2` te gebruiken in je programma, kies een waarde die een mooi resultaat geeft!)
 :::
 
 ### Creaties clonen
 
 :::{exercise} Creaties clonen
+:label: ex-creaties-clonen
+
 Je creatie voelt zich een beetje eenzaam zo alleen in de sketch. 
 
 1. Gebruik een while-loop om je tekening vier keer te tekenen. Waarom zie je nu nog steeds maar één creatie?
@@ -114,9 +116,10 @@ Je creatie voelt zich een beetje eenzaam zo alleen in de sketch.
    Als je als teller `i` hebt gebruikt, kun je bijvoorbeeld `x` overal vervangen door `x + i`. Je moet dan wel zorgen dat je `i` met grote stappen verhoogt om genoeg ruimte te maken, bijvoorbeeld `i = i + 200`. Je kunt ook `x + (i * 200)` gebruiken in je tekencode, als je liever `i = i + 1` als teller wilt gebruiken. Zoveel mogelijkheden!
    ```
 
-3. Kun je in plaats van je creaties horizontaal naast elkaar ook op een schuine lijn zetten?
+3. Kun je jouw creaties in plaats van horizontaal naast elkaar ook op een schuine lijn zetten?
 
 4. Voeg een variabele `aantalCreaties` toe die bepaalt hoeveel creaties je tekent. Pas de afstand tussen je creaties aan op de breedte van het scherm en het aantal creaties, zodat ze over het scherm verdeeld worden.
 
 5. Verander je programma zodat het nu een for-loop in plaats van een while-loop gebruikt. (Of andersom als je bij 1 al eigenwijs was!)
+
 :::
