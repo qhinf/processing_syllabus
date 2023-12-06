@@ -66,6 +66,23 @@ Nu stijgt jouw creatie ook als object!
 
 :::
 
+Uit deze oefening kun je twee belangrijke punten meenemen:
+
+- Zorg dat een methode één ding doet. Dat is handig, want dan weet je waar je moet kijken als je iets wil veranderen in je programma. Als je bijvoorbeeld wilt aanpassen hoe je creatie beweegt, hoef je niet in de `display` methode te kijken.
+- Gebruik een methode met de naam `update` voor dingen die elk frame veranderen. Dat is de standaardnaam voor deze methode in de Processing, dus dan snapt iedereen wat daar gebeurt.
+
+:::{exercise} Stuiterobject
+
+Pas je programma uit de vorige oefening aan en laat je creatie nu stuiteren in plaats van alleen opstijgen. Zorg dat alle code hiervoor in de `update` methode komt te staan. Kijk eventueel terug naar {ref}`ex-creatie-stuiteren`.
+
+:::
+
+<!-- :::{exercise} Eén ding tegelijk
+
+In de vorige oefening hebben we alle updates die elk frame gebeuren in de `update` methode gezet, maar het kan nog overzichtelijker, zeker als je meerdere updates 
+
+::: -->
+
 ```java
 // TODO
 // Deze syllabus is nog in ontwikkeling. Hier komen binnenkort nog oefeningen te 
