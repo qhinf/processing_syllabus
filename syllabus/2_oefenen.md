@@ -77,6 +77,8 @@ Begin deze week met de opdracht hierboven en sla die goed op. Je creatie kun je 
 ### In beweging
 
 :::{exercise} Opstijgen
+:label: ex-creatie-opstijgen
+
 De locatie van je creatie wordt bepaald door de variabelen `x` en `y`. 
 
 1. Laat je creatie opstijgen door een van die variabelen te veranderen in `draw`. Welke variabele bepaalt de hoogte?
@@ -93,6 +95,8 @@ Zorg dat je creatie niet verder stijgt dan de bovenkant van het venster.
 :::
 
 :::{exercise} Stuitercreatie
+:label: ex-creatie-stuiteren
+
 Laat je creatie in plaats van opstijgen, nu stuiteren op de grond en tegen het plafond. Voeg hiervoor een variabele `snelheid` toe aan je programma, die aangeeft hoe snel je creatie beweegt.
 
 1. Welke y-coördinaat heeft de onderkant van het venster? Welke Processing variabele kun je hiervoor gebruiken? (Bekijk de [Reference](https://processing.org/reference/#environment) onder Environment als je dit op wilt zoeken.)

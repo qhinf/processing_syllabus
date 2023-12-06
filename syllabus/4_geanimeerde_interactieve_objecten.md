@@ -50,6 +50,22 @@ Ga daarna verder met de rest van je project: voeg meer beweging en interactie to
 
 ## Oefeningen
 
+### Objecten in beweging
+
+:::{exercise} Objecten in beweging
+
+In {ref}`ex-creatie-opstijgen` heb je jouw creatie laten opstijgen en in {ref}`ex-creatie-class` heb je voor jouw creatie een class gemaakt met eigenschappen `x` en `y` voor de positie. In deze oefening gaan we diezelfde beweging op een nette manier in de class verwerken.
+
+In {ref}`ex-creatie-opstijgen` heb je in de `draw` functie bijvoorbeeld een variabele `y` iedere keer een klein beetje aangepast (bijvoorbeeld `y = y - 1;`), om je creatie te laten bewegen. In de class voor jouw creatie heb je alle code die je in `draw` had geschreven om jouw creatie te tekenen in een nieuwe methode `display` gezet. Natuurlijk kunnen we daar ook die regel aan toevoegen om hetzelfde resultaat te krijgen, maar voor de structuur is het netter om in de `display` functie alleen code te zetten die jouw creatie tekent en alle andere functionaliteit in andere methodes te zetten.
+
+1. Voeg aan je creatie een methode `update` toe, met return type `void` en geen argumenten. In deze methode maken we de aanpassingen aan de eigenschappen die je voor ieder frame maakt. Zet om je creatie te laten stijgen de regel `this.y = this.y - 1;` in die methode.
+
+2. Als je je programma uitvoert, zal je creatie nog niet opstijgen, want de methode `update` wordt nog niet uitgevoerd. Roep deze methode ook aan in de `draw` functie, voordat je `creatie.display()` aanroept.
+
+Nu stijgt jouw creatie ook als object!
+
+:::
+
 ```java
 // TODO
 // Deze syllabus is nog in ontwikkeling. Hier komen binnenkort nog oefeningen te 
