@@ -53,6 +53,7 @@ Ga daarna verder met de rest van je project: voeg meer beweging en interactie to
 ### Objecten in beweging
 
 :::{exercise} Objecten in beweging
+:label: ex-creatie-class-opstijgen
 
 In {ref}`ex-creatie-opstijgen` heb je jouw creatie laten opstijgen en in {ref}`ex-creatie-class` heb je voor jouw creatie een class gemaakt met eigenschappen `x` en `y` voor de positie. In deze oefening gaan we diezelfde beweging op een nette manier in de class verwerken.
 
@@ -77,25 +78,152 @@ Pas je programma uit de vorige oefening aan en laat je creatie nu stuiteren in p
 
 :::
 
-<!-- :::{exercise} Eén ding tegelijk
+:::{exercise} Eén ding tegelijk
 
-In de vorige oefening hebben we alle updates die elk frame gebeuren in de `update` methode gezet, maar het kan nog overzichtelijker, zeker als je meerdere updates 
-
-::: -->
+Bij deze oefening hoort een voorbeeldprogramma met een bloemetje dat op en neer stuitert en tegelijkertijd van kleur verandert:
 
 ```java
-// TODO
-// Deze syllabus is nog in ontwikkeling. Hier komen binnenkort nog oefeningen te 
-// staan. Tot die tijd kun je natuurlijk ook zelf wat doen: je hebt al verscheidene
-// programma's geschreven die je kunt aanpassen! Maak bijvoorbeeld een class voor 
-// je creatie en voeg daar beweging en interactie met events aan toe. Zorg dat je
-// in je class geen mouseX, mouseY, mousePressed en dat soort variabelen 
-// meer gebruikt!
+int x; // de x-positie van het bloemetje
+int y; // de y-positie van het bloemetje
+int r; // de grootte van een bloemblad
+int d; // de richting van bewegen
+
+color startBladKleur;
+color eindBladKleur;
+color bladKleur;
+color kernKleur;
+
+void setup() {
+  size(600, 600);
+  this.r = 50;
+  this.x = 300;
+  this.y = height - 2 * this.r;
+  this.d = -1; // het bloempje beweegt eerst naar boven
+  
+  this.startBladKleur = #FFFFFF;
+  this.eindBladKleur = #75C6F7;
+  this.bladKleur = this.startBladKleur;
+  this.kernKleur = #F2E711;
+}
+
+void draw() {
+  background(123, 242, 90);
+  
+  // teken het bloemetje
+  noStroke();
+  fill(bladKleur);
+  circle(x - r, y - r, 2 * r);
+  circle(x - r, y + r, 2 * r);
+  circle(x + r, y - r, 2 * r);
+  circle(x + r, y + r, 2 * r);
+  fill(kernKleur);
+  circle(x, y, 2 * r);
+  
+  // Detecteer of de rand van het scherm bereikt is
+  if (y > height - 2 * this.r) { // de onderrand is geraakt
+    d = -1 * d; // draai de beweegrichting om
+  } else if (y < 2*r) { // de bovenrand is geraakt
+    d = -1 * d; // draai de beweegrichting om
+  }
+  
+  y = y + d; // beweeg de bloem een stapje in de richting
+  
+  // Pas de bladkleur aan op basis van de y-positie
+  bladKleur = lerpColor(startBladKleur, eindBladKleur, (float)(height - y) / height);
+}
 ```
+
+1. Lees de sketch door en zorg dat je snapt hoe het programma werkt.
+
+2. Maak een class voor het KameleonBloemetje, met de juiste code in de `display` en `update` methodes.
+
+We hebben gezien dat in een goed design, een methode het liefst maar één ding doet. `update` doet nu twee dingen: het bloemetje bewegen en van kleur laten veranderen.
+
+3. Voeg twee methodes toe voor die twee functionaliteiten van het bloemetje. Pas de `update` methode aan zodat die er zo uit komt te zien:
+
+   ```java
+     void update() {
+       beweeg();
+       veranderKleur();
+     }
+   ```
+
+:::
+
+### Interactie met event handlers
+
+Tot nu toe heb je voor interactie vooral gebruik gemaakt van variabelen zoals `mouseX`, `mouseY`, `keyPressed` etc. in de `draw` of `display` methodes. Daarmee zit de interactie overal verweven door je programma. Er is een betere manier om dat te organiseren: de event handlers. Dit zijn methodes die je in de hoofdtab definieert en die door Processing worden aangeroepen op het moment dat er een event plaatsvindt. De methode `mouseMoved` wordt bijvoorbeeld aangeroepen als de muis is bewogen, `keyPressed` als er een toets op het toetsenbord is ingedrukt. Kijk bij [Keyboard en Mouse in de reference](https://processing.org/reference/#input) om te zien welke event handlers beschikbaar zijn.
+
+Bij deze oefeningen maken we nog even geen gebruik van objecten. Die komen bij het volgende deel weer aan bod.
+
+:::{exercise} Bolletje dat je muis volgt met event handlers
+
+Bekijk dit voorbeeldprogramma met een rood bolletje dat je muis volgt:
+
+```java
+void setup() {
+  size(400, 400);
+}
+
+void draw() {
+  background(255);
+  fill(255, 0, 0);
+  noStroke();
+  circle(mouseX, mouseY, 25);
+}
+```
+
+We gaan dit programma aanpassen om gebruik te maken van de event handlers. Daarmee is de interactie dan op één plek in het programma gedefinieerd en hoef je dus niet te zoeken als je wilt aanpassen hoe die interactie werkt.
+
+1. Maak variabelen `int bolletjeX;` en `int bolletjeY;` die de positie van het bolletje bepalen. Pas het programma aan zodat het bolletje op die plek wordt getekend. 
+
+   Als je het programma nu uitvoert, blijft het bolletje in de linkerbovenhoek staan. In de volgende stappen voegen we een event handler toe die het bolletje verplaatst als de muis is bewogen.
+
+2. Voeg een event handler to die detecteerd wanneer de muis bewogen is:
+
+   ```java
+   void mouseMoved() {
+     
+   }
+   ```
+
+3. Zet in deze event handler twee regels code die de positie van het bolletje aanpassen aan de nieuwe positie van de muis:
+
+   ```java
+     bolletjeX = mouseX;
+     bolletjeY = mouseY;
+   ```
+
+   Nu volgt het bolletje weer de positie van de muis!
+
+Vanaf nu gebruik je de variabelen `mouseX`, `mouseY` etc. alleen nog in de event handlers!
+
+:::
+
+:::{admonition} Waarom?
+:class: tip
+
+> De code is er bij de vorige oefening alleen maar ingewikkelder door geworden. Waarom is dit een goed idee?
+
+In software moet je vaak dingen aanpassen en daarom bouwen we software graag op uit kleinere stukken die makkelijker te begrijpen zijn. Dat is de reden dat we gebruik maken van classes en objecten en is ook de reden dat we liever expliciete event handlers gebruiken dan de event variabelen.
+
+In het voorbeeld van de vorige oefening hebben we de positie losgekoppeld van de interactie. Als we nu willen veranderen hoe het bolletje getekend wordt op de gegeven positie, hoeven we geen rekening meer te houden met de interactie. En als we willen veranderen hoe de interactie werkt (bijvoorbeeld dat het bolletje vertraagd achter de muis aan beweegt), dan hoeven we alleen in de event handler te kijken en niet bij hoe het bolletje getekend wordt. We hebben dus de twee zaken uit elkaar gehaald, waardoor het makkelijker is om ieder op zich aan te passen.
+
+:::
+
+:::{exercise} Beginnetje met event handlers in jouw creatie
+
+Pas jouw creatie (de originele versie, voordat je er een class van maakte) aan zodat de sketch gebruik maakt van event handlers. Als je de positie van de muis gebruikte, voeg dan een `mouseMoved()` handler toe. Als je eerst de `mousePressed` variabele gebruikte, gebruik dan nu de `mousePressed()` en `mouseReleased()` event handlers. Gebruik voor toetsenbord interactie de `keyPressed` en `keyReleased` event handlers.
+
+Er zijn ook een aantal event handlers waarvoor niet direct een variabele was. Met `mouseWheel()` kun je bijvoorbeeld iets doen als de gebuiker met hun muiswiel scrollt, `mouseClicked()` is een snelle manier om te kijken of een gebruiker iets heeft aangeklikt en met `mouseDragged()` kun je zien of de muis is verplaatst terwijl een muisknop is ingedrukt. Voor het toetsenbord is er ook een `keyTyped()` event handler die acties als Ctrl, Shift en Alt negeert. Gebruik een van deze handlers om je code simpeler te maken of een nieuwe interactie toe te voegen.
+
+:::
 
 ### Objectgeoriënteerde interactie
 
 :::{exercise} Beweegbare box
+:label: ex-beweegbare-box
+
 Bij deze oefening hoort een voorbeeldprogramma met een box die je over het scherm kunt slepen:
 
 ```java
@@ -230,12 +358,24 @@ In deze oefening maak je van deze Box een object, en zorg je dat de interactie v
 5. Roep deze eventmethodes aan vanuit de eventmethodes in de hoofdtab, als er door dat event iets verandert voor de box. In mousePressed roep je bijvoorbeeld alleen de methode voor het `locked` event aan, als de muis op dat moment boven de box zweeft (gebruik hier de `isOver` methode!)
 
 Als alles goed is gegaan, kun je nu de box weer over het scherm slepen!
+
 :::
 
 :::{exercise} Meerdere beweegbare boxes
+:label: ex-meerdere-beweegbare-boxes
+
 Het mooie van objectgeoriënteerd programmeren is dat je relatief makkelijk meerdere objecten van dezelfde class kunt maken.
 
 1. Voeg een tweede object van class Box toe aan je programma. Pas elke eventmethode aan om de events ook door te geven naar je tweede box, als een event voor die box van toepassing is.
 
 Je hebt nu best veel gekopieerde code in je programma... Volgende week gaan we zien hoe je dit beter op kunt lossen door gebruik te maken van lijsten, zodat je zoveel boxes in je programma kunt zetten als je maar wilt, zonder extra code te hoeven schrijven!
+
+:::
+
+:::{exercise} Jouw creatie met event handlers
+
+Pas de class-versie van jouw creatie (die je ook in {ref}`ex-creatie-class-opstijgen` hebt gebruikt) aan om gebruik te maken van de event handler methodes. Zorg dus dat jouw creatie de juiste fields heeft om de huidige staat bij te houden, methodes heeft om events te ontvangen en dat de hoofdtab alle relevante event handler methodes bevat. Variabelen als `mouseX`, `mouseY`, `mousePressed` etc. worden nu alleen nog gebruikt in de hoofdtab in de event handlers.
+
+(Waarom? Zo zorg je dat alle interactie op één plek gedefinieerd is: bij de event handlers in de hoofdtab. Zo kun je dus makkelijk alle interactie in je sketch terugvinden.)
+
 :::

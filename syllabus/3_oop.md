@@ -132,6 +132,7 @@ Voer je sketch uit. Je hebt nu van jouw creatie een class gemaakt, die je makkel
 :::
 
 :::{exercise} Creaties clonen met classes
+:label: ex-creatie-class-clonen
 
 In {ref}`ex-creaties-clonen` heb je meerdere creaties getekend door de tekencode te herhalen met een loop. Nu je jouw creatie in class hebt gezet, kun je ook meerdere creaties maken die onafhankelijk van elkaar opereren. (Nu doen de creaties natuurlijk nog niet zo veel, maar daar komt nog wel verandering in!) Voeg een extra variabele toe aan je sketch voor een tweede creatie (bijvoorbeeld `mijnCreatie2`). Maak voor deze creatie en een nieuw object in `setup` en teken de tweede creatie in `draw`.
 
