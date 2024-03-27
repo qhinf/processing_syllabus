@@ -11,6 +11,21 @@ Aan het eind van deze week kun je je programma dus nog beter structureren, maar 
 - Objecten in objecten, volgens de principes van objectgeoriënteerd programmeren
 - Interactie en communicatie tussen objecten
 
+<!-- 
+
+### Objecten in objecten
+
+
+### Interactie tussen objecten
+
+- Methodes aanroepen en parameters meegeven
+  - Reference naar het co-object in de constructor, indien nodig (niet globaal opvragen!)
+- Geen globale variabeles
+  - Geen koelkastcommunicatie!
+  - Globale constantes zijn oké
+
+-->
+
 ## Online materiaal
 
 **Aanbevolen**:
@@ -61,7 +76,7 @@ Aan het eind van deze week kun je je programma dus nog beter structureren, maar 
 // TODO
 // Deze syllabus is nog in ontwikkeling. Hier komen binnenkort nog oefeningen te 
 // staan. Tot die tijd kun je natuurlijk ook zelf wat doen: je hebt al verscheidene
-// programma's geschreven die je kunt aanpassen! Voeg bijvoorbeel een interactie toe
+// programma's geschreven die je kunt aanpassen! Voeg bijvoorbeeld een interactie toe
 // tussen je creaties: laat ze tegen elkaar aan stuiteren of laat de kleur van de één
 // afhangen van de positie van de ander. Verzin iets leuks!
 ```

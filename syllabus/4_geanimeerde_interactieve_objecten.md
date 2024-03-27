@@ -4,7 +4,7 @@ Deze week gaan we onze objecten tot leven brengen en interactie toevoegen. Voor 
 
 ## Tijdens de les
 
-We beginnen de les met een feedbackronde over je eigen project. Laat de inspiratie voor jouw project zien, vertel welke objecten er te zien zijn en welke classes je gaat definiëren of al hebt gedefiniëerd. Je medeleerlingen geven feedback op jouw keuzes. Als je niet bij de les aanwezig bent, zorg dan dat je deze feedback zelf organiseert door een of twee klasgenoten te vragen en vertel in je videopresentatie wat die feedback was en hoe je het verwerkt hebt.
+We beginnen de les met een feedbackronde over je eigen project. Laat de inspiratie voor jouw project zien, vertel welke objecten er te zien zijn en welke classes je gaat definiëren of al hebt gedefinieerd. Je medeleerlingen geven feedback op jouw keuzes. Als je niet bij de les aanwezig bent, zorg dan dat je deze feedback zelf organiseert door een of twee klasgenoten te vragen en vertel in je videopresentatie wat die feedback was en hoe je het verwerkt hebt.
 
 De uitleg bestaat eerst uit een beetje herhaling van het online materiaal van vorige week, daarna kijken we verder naar de structuur van interacties.
 
@@ -351,11 +351,11 @@ In deze oefening maak je van deze Box een object, en zorg je dat de interactie v
 
 3. Maak ook een methode `boolean isOver(float posX, float posY)` die `true` returnt als `posX` en `posY` binnen de box vallen (en anders `false` returnt). Deze methode kun je dan in je event handlers gebruiken.
 
-4. In main zijn vier eventmethodes: mouseMoved, mousePressed, mouseDragged en mouseReleased. Wat gebeurt er in die functies? Welke events zijn dat vanuit het perspectief van de box? Maak methodes in de class Box voor deze events.
+4. In main zijn vier eventmethodes: `mouseMoved`, `mousePressed`, `mouseDragged` en `mouseReleased`. Wat gebeurt er in die functies? Welke events zijn dat vanuit het perspectief van de box? Maak methodes in de class Box voor deze events.
 
    Bijvoorbeeld: als mousePressed gebeurd op het moment dat de muis over die box is, dan kun je dat zien als een `locked` event voor de box.
 
-5. Roep deze eventmethodes aan vanuit de eventmethodes in de hoofdtab, als er door dat event iets verandert voor de box. In mousePressed roep je bijvoorbeeld alleen de methode voor het `locked` event aan, als de muis op dat moment boven de box zweeft (gebruik hier de `isOver` methode!)
+5. Roep deze eventmethodes aan vanuit de eventmethodes in de hoofdtab, als er door dat event iets verandert voor de box. In `mousePressed` roep je bijvoorbeeld alleen de methode voor het `locked` event aan, als de muis op dat moment boven de box zweeft (gebruik hier de `isOver` methode!)
 
 Als alles goed is gegaan, kun je nu de box weer over het scherm slepen!
 
